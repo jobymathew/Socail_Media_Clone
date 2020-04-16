@@ -24,4 +24,6 @@ urlpatterns = [
     path('',views.HomePage.as_view(),name='home'),
     path('test/',views.TestPage.as_view(),name='test'),
     path('thanks/',views.ThanksPage.as_view(),name='thanks'),   
+    path('posts/',include('posts.urls'),name='posts'),
+    path('groups/',include('groups.urls'),name='groups'),
 ]
